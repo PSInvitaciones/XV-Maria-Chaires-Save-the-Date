@@ -1,0 +1,292 @@
+/* 🌎 Configuración general del Body */
+body {
+    font-family: 'Lora', Serif;
+    background-color: #f8f8f8; /* Color de fondo por si la imagen no carga */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url(Fondo_Página_Web.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen */
+    position: relative;
+   
+}
+/* 🎭 Capa oscura sobre la imagen de fondo */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Opacidad del 40% */
+    z-index: -1; /* Mantiene la capa detrás del contenido */
+}
+
+/* 🏛️ Estilos del Header */
+header {
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    height: 100vh; /* Ocupa toda la altura visible */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    text-align: center;
+    background-image: url('Fondo_Página_Web.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Cubre el área sin distorsión */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición */
+    position: relative;
+}
+
+/* 🎭 Capa semitransparente para mejorar la legibilidad */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Sutil oscurecimiento */
+    z-index: -1;
+}
+
+/* ✨ Estilos del título dentro del Header */
+header .nombre-xv {
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté sobre el overlay */
+    font-size: 4.5em;
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    max-width: 80%;
+}
+
+/* 📌 Secciones Generales */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 📍 Sección de Ubicación */
+.ubicacion {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 🎭 Efecto flotante al pasar el mouse */
+.ubicacion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🏛️ Contenedor de la imagen del evento */
+.contenedor-lugar {
+    text-align: center;
+    padding: 10px;
+}
+
+/* 🖼️ Imagen del lugar */
+.imagen-lugar {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 📍 Dirección debajo de la imagen */
+.direccion-lugar {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* 🔘 Botones Generales */
+.boton {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #1a538c;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 🔘 Efecto hover */
+.boton:hover {
+    background-color: #154b7a;
+    transform: scale(1.05);
+}
+
+/* 🔘 Botón de Ubicación */
+.boton-google {
+    background-color: #ffff ;
+}
+
+.boton-google:hover {
+    background-color: #6daae6;
+}
+
+/* ⏳ Cuenta regresiva */
+.cuenta-regresiva {
+    text-align: center;
+}
+
+.cuenta-regresiva h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+
+.contador div {
+    background-color: rgba(100, 150, 244, 0.1);
+    color: #2f2323;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.contador div span {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.contador div p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* ❤️ Agradecimiento a los padres */
+.agradecimiento {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.agradecimiento h2 {
+    font-size: 2em;
+    color: #1a538c;
+    margin-bottom: 15px;
+}
+
+.agradecimiento p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.agradecimiento .nombres-papas {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #8eabc9;
+    margin: 10px 0;
+}
+
+/* ✝️ Estilo especial para el padre fallecido */
+.padre-fallecido::after {
+    content: " ✝";
+    font-size: 0.8em;
+    color: #888;
+    margin-left: 5px;
+}
+
+/* 🎞️ Galería de Fotos */
+.galeria {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 90%;
+}
+
+.carrusel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carrusel-contenedor {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-contenedor img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carrusel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 2;
+}
+
+.carrusel-control.prev {
+    left: 10px;
+}
+
+.carrusel-control.next {
+    right: 10px;
+}
+
+.carrusel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.cuenta-regresiva .boton {
+    display: inline-block;
+    margin-top: 20px; /* Espacio superior para separar del contador */
+}
+/* ✨ Estilo para las estrellas */
+/* ✨ Estilo actualizado para las estrellas */
+/* ✨ Estilo final para las estrellas brillantes */
+.estrella {
+    position: fixed;
+    border-radius: 50%;  /* Hace que sean círculos perfectos */
+    background-color: rgba(255, 255, 255, 0.9);  /* Blanco brillante */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);  /* Resplandor brillante alrededor */
+    width: 5px;  /* Tamaño pequeño para parecer estrellas */
+    height: 5px;
+    opacity: 1;  /* Visibilidad completa */
+    z-index: 1000;  /* Asegura que estén por encima de todo */
+    pointer-events: none;  /* No bloquean la interacción con otros elementos */
+    transition: transform 2s ease-out, opacity 2s ease-out;  /* Animación suave */
+}
+

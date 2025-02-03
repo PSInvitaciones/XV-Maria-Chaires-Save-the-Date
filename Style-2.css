@@ -289,4 +289,24 @@ section {
     pointer-events: none;  /* No bloquean la interacción con otros elementos */
     transition: transform 2s ease-out, opacity 2s ease-out;  /* Animación suave */
 }
-
+/* 🎯 Centrar el botón con Flexbox */
+.centrar-boton {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente (si el contenedor tiene altura) */
+    margin: 20px 0;           /* Espacio arriba y abajo */
+}
+#addToCalendar {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #28a745;  /* Verde vibrante */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Sombra suave */

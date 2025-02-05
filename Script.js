@@ -136,7 +136,7 @@ estrella.style.boxShadow = `0 0 20px ${estrella.style.backgroundColor}`;
   // ─────────────────────────────────────────
   // 4. Código para la cuenta regresiva
   // ─────────────────────────────────────────
-  const eventoFecha = new Date('2025-09-13T18:00:00').getTime();
+  const eventoFecha = new Date('2025-09-13T21:00:00').getTime();
 
   function actualizarCuentaRegresiva() {
     const ahora = new Date().getTime();
